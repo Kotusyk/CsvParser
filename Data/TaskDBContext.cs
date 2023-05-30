@@ -51,19 +51,5 @@ namespace App.Data
         public DbSet<User> Users { get; set; }
 
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-
-        //    if (!optionsBuilder.IsConfigured)
-        //    {
-        //        optionsBuilder.UseSqlServer(
-        //     @"Server=(localdb)\mssqllocaldb;Database=AnnaTaskDB;Trusted_Connection=True", b => b.MigrationsAssembly("Presentation"));
-        //    }
-        //    // optionsBuilder
-        //    //.UseSqlServer(
-        //    //  @"Server=(localdb)\mssqllocaldb;Database=AnnaTaskDB;Trusted_Connection=True",
-        //    //  options => options.EnableRetryOnFailure());
-        //}
-
     }
 }

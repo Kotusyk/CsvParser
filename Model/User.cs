@@ -9,6 +9,7 @@ namespace App.Model
 {
     public class User
     {
+        [CsvHelper.Configuration.Attributes.Ignore]
         public int Id { get; set; }
         public string Name { get; set; }
 

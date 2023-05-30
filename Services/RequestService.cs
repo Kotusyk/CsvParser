@@ -1,8 +1,10 @@
 ﻿using App.Data;
 using App.Model;
 using App.Services;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
+using System.Threading;
 
 namespace AnnaMelnyk_TestTask.Services
 {
@@ -21,6 +23,7 @@ namespace AnnaMelnyk_TestTask.Services
         {
             return await _context.Users.FindAsync(Id);
         }
+
         public async Task<User> CreateUser(User UserForCreating)
         {
             _context.Users.Add(UserForCreating);
